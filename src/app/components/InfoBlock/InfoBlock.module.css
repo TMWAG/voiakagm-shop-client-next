@@ -1,0 +1,8 @@
+.infoBlock {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: column;
+  column-gap: 1vw;
+  margin: 3vh 0;
+}

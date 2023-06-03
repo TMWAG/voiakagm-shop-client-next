@@ -1,0 +1,24 @@
+.navbar {
+  width: 60vw;
+  margin: 1vh auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navLink {
+  color: black;
+  margin: 0 0.5vw;
+  text-decoration: none;
+  display: flex;
+}
+
+.navLink > img {
+  width: 90px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.active {
+  color: #6b4fbd;
+}

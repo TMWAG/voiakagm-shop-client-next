@@ -1,0 +1,7 @@
+.categoriesBlock {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: column;
+  gap: 1vw;
+}

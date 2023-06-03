@@ -1,0 +1,34 @@
+.categoryItem {
+  border: 1px solid #cdcdcd;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-height: 11vh;
+  background-color: #fff;
+  border-radius: 25px;
+}
+
+.categoryItem:hover {
+  transition-duration: 200ms;
+  box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+}
+
+.categoryItem > img {
+  max-height: 11vh;
+  padding: 1vh 2vw;
+}
+
+.categoryItem > span {
+  padding: 1vh 0.75vw;
+  font-weight: bold;
+  font-size: 2vh;
+  color: #2f3035;
+}
+
+.categoryItem > a {
+  font-size: 1.75vh;
+  padding: 1vh 0.75vw;
+  text-decoration: none;
+  color: #c4c4c4;
+}

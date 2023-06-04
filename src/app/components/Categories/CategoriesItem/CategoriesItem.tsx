@@ -16,7 +16,7 @@ export default function CategoriesItem({
   return (
     <div className={styles.categoryItem}>
       <span>{name}</span>
-      <Link href={`/shop/catalogue/${id}`}>Подробнее...</Link>
+      <Link href={`/catalogue/${id}`}>Подробнее...</Link>
       <Image
         src={
           picture !== null

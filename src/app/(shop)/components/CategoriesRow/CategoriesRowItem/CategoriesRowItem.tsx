@@ -21,7 +21,7 @@ export const CategoriesRowItem = ({
   return (
     <Link
       className={`${styles.item} ${ isActive && styles.active}`}
-      href={`/shop/catalogue/${id}`}
+      href={`/catalogue/${id}`}
     >
       <span>{name}</span>
       <Image

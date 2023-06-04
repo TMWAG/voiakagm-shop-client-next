@@ -21,7 +21,7 @@
 }
 
 .active {
-  border: none;
+  border-color: transparent;
   color: var(--active-link-color);
   box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
 }

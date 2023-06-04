@@ -1,8 +1,11 @@
-import { Navbar } from '@/components/layout/Navbar/Navbar';
 import './globals.css'
-import { Source_Sans_Pro } from 'next/font/google'
+import localFont from 'next/font/local'
+import { Header } from '@/components/layout/Header/Header';
 
-const source_sans_pro = Source_Sans_Pro({ subsets: ['latin', 'cyrillic'], style: ['normal'], weight: ['700', '400'] });
+const SFProDisplay = localFont({
+  src: '../../fonts/SF-Pro-Display-Regular.otf',
+
+}); 
 
 export const metadata = {
   title: 'Create Next App',
@@ -16,8 +19,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ru">
-      <body className={source_sans_pro.className}>
-        <Navbar/>
+      <body className={SFProDisplay.className}>
+        <Header/>
         {children}
       </body>
     </html>

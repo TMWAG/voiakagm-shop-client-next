@@ -17,19 +17,19 @@ export const navbarLinks = [
     />,
   },
   {
-    href: '/info/guarantees',
+    href: '/guarantees',
     content: 'Гарантии',
   },
   {
-    href: '/shop/sales',
+    href: '/sales',
     content: 'Скидки',
   },
   {
-    href: '/info/recommendations',
+    href: '/recommendations',
     content: 'Рекомендации',
   },
   {
-    href: '/shop/cart',
+    href: '/cart',
     content: (
       <>
         <CartSVG width={20} />

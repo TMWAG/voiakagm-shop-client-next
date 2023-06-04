@@ -1,8 +1,7 @@
-import axios from 'axios';
-import Categories, { ICategory } from './components/Categories/Categories'
+import { getCategories } from '@/lib/api/getCategories';
+import Categories from './components/Categories/Categories'
 import InfoBlock from './components/InfoBlock/InfoBlock'
 import styles from './page.module.css'
-import { GetServerSideProps } from 'next';
 
 export default async function Home() {
   const categories = await getCategories();
@@ -12,13 +11,4 @@ export default async function Home() {
       <Categories categories={categories}/>
     </main>
   );
-};
-
-const getCategories = async () => {
-  if (!process.env.NEXT_PUBLIC_API_URL)
-    throw new Error('Не указан API URL');
-  const url = process.env.NEXT_PUBLIC_API_URL.concat('category/all');
-  const data = await axios.get(url).then(res => res.data);
-  console.log(data);
-  return data;
 };

@@ -24,7 +24,7 @@ export default function CategoriesItem({
             : ''
           }
         alt={name}
-        height={130}
+        height={120}
         width={180}
       />
     </div>

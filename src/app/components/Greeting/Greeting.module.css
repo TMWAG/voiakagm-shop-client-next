@@ -1,0 +1,11 @@
+.greeting {
+  grid-area: sidebar;
+  font-weight: 500;
+  font-size: 2vh;
+  margin-bottom: 2.5vh;
+}
+
+.greeting > a {
+  text-decoration: none;
+  color: var(--primary-violet-color);
+}

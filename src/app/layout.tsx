@@ -1,6 +1,6 @@
 import './globals.css'
 import localFont from 'next/font/local'
-import { Header } from '@/components/layout/Header/Header';
+import { Header } from '@/app/components/Header/Header';
 
 const SFProDisplay = localFont({
   src: '../../fonts/SF-Pro-Display-Regular.otf',

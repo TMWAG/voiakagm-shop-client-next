@@ -1,0 +1,7 @@
+.sidebar {
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  margin: 5.9vh auto auto 7.6vw ;
+  width: 15.9vw;
+}

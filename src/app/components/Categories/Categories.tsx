@@ -1,7 +1,5 @@
-import type { GetServerSideProps } from 'next';
 import styles from './Categories.module.css';
 import CategoriesItem from './CategoriesItem/CategoriesItem';
-import axios from 'axios';
 
 export interface ICategory{
   id: number;

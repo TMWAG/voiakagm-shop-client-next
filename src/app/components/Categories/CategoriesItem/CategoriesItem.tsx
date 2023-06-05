@@ -14,9 +14,10 @@ export default function CategoriesItem({
   if (!process.env.NEXT_PUBLIC_PICTURES_URL)
     throw Error('не указан url api');
   return (
-    <div className={styles.categoryItem}>
-      <span>{name}</span>
-      <Link href={`/catalogue/${id}`}>Подробнее...</Link>
+    <Link
+      href={`/catalogue/category/${id}`}
+      className={styles.categoryItem}
+    >
       <Image
         src={
           picture !== null
@@ -24,9 +25,10 @@ export default function CategoriesItem({
             : ''
           }
         alt={name}
-        height={120}
-        width={180}
+        height={32}
+        width={32}
       />
-    </div>
+      <span>{name}</span>
+    </Link>
   );
 };
